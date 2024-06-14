@@ -11,6 +11,31 @@
             padding: 20px;
             margin: 0;
         }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            margin-right: 5px;
+            background: #f1f1f1;
+        }
+        .tab.active {
+            background: #fff;
+            border-bottom: 1px solid #fff;
+        }
+        .tab-content {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: #fff;
+        }
+        .tab-content.active {
+            display: block;
+        }
         .heading {
             color: darkblue;
             font-weight: bold;
@@ -43,139 +68,313 @@
     </style>
 </head>
 <body>
-    <p class="heading">1. Can We All Transform Karamchedu in the Most Meaningful Way?</p>
-    <p>In today's world, <span class="highlight italic">education</span> is the most valuable asset an individual can possess. If there is one thing that can truly transform an individual, a family, a community, and our village, it is education.</p>
-    <p><span class="highlight">I firmly believe that education is the key to uplifting and transforming our village, Karamchedu.</span></p>
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('english')">English</div>
+        <div class="tab" onclick="showTab('telugu')">తెలుగు</div>
+    </div>
 
-    <br>
-    <br>
+    <div id="english" class="tab-content active">
+        <p>Dear Alumni and Well-wishers,</p>
 
-    <p class="heading">2. So Can We Provide Education Like the Best Schools in the Country?</p>
-    <ul>
-        <li>We can't expect our village school to match the facilities of the best schools in the country, such as those in major cities, given the obvious limitations. Nor can we ask parents in our village to pay city-level fees to achieve this.</li>
-        <li>As individuals who grew up during the digital era, we have witnessed firsthand how technology can bridge the gap between a person in a remote village and someone in the most developed city. Technology has significantly reduced, if not erased, this disparity. All we need to do is embrace it and empower ourselves with it to reduce the gap between our school and the best schools in our country.</li>
-    </ul>
+        <p class="heading">1. Can We All Transform Karamchedu in the Most Meaningful Way?</p>
+        <p>In today's world, <span class="highlight italic">education</span> is the most valuable asset an individual can possess. If there is one thing that can truly transform an individual, a family, a community, and our village, it is education.</p>
+        <p><span class="highlight">I firmly believe that education is the key to uplifting and transforming our village, Karamchedu.</span></p>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <p class="heading">3. How Can We Use Technology to Emulate the Best Schools?</p>
-    <p>The main motivation behind this idea is that along with digitization, we can use tools like <span class="highlight">ChatGPT as virtual teachers to support school teachers and help students understand concepts better.</span></p>
-    <ul>
-        <li><span class="highlight">Use Projectors/SmartBoards (Android tablets but on a bigger screen, commonly used by schools in cities) to teach lessons with videos and pictures</span>
-            <ul>
-                <li>As the saying goes, a picture is worth a thousand words. Imagine watching a movie based on your 10th class non-detail "Hounds of Baskerville." It would be much easier to understand and save a lot of time, allowing students to focus on learning rather than memorizing lessons they don’t fully grasp.</li>
-                <li>Consider explaining the concept of reflection or the behavior of the moon, sun, and earth in our solar system without showing this <a href="https://www.youtube.com/shorts/b5phg2ml3YM">YouTube video</a>. Visual aids make complex topics clearer and more engaging.</li>
-            </ul>
-        </li>
-        <li><span class="highlight">Use online teaching platforms and resources like Khan Academy, YouTube videos, and educational images, etc., on lesson-related topics.</span>
-            <ul>
-                <li>Empower teachers and students with the best resources for learning, providing access to high-quality educational content and interactive lessons.</li>
-            </ul>
-        </li>
-        <li><span class="highlight">Use AI tools like ChatGPT</span>
-            <ul>
-                <li>To quote an example, you can share your screen and ask ChatGPT to solve/explain any problem/topic and have multiple people speak to it in real time.</li>
-                <li>To explain any topic in the simplest way in Telugu/English.</li>
-                <li>Solve any problem (be it math, physics, English, and so on).</li>
-                <li>Improve communication skills by having a group discussion using that tool to correct students' grammar and communication skills.</li>
-                <li>Sample videos on ChatGPT teacher-like and translation capabilities:
-                    <ul>
-                        <li><a href="https://www.youtube.com/watch?v=c2DFg53Zhvw">Video 1</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=_nSmkyDNulk">Video 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li><span class="highlight">Equip school with Multiple Computers and Monitors</span>
-            <ul>
-                <li>Teach basic computer concepts to students, preparing them for the digital age.</li>
-                <li>Enable teachers and interested students to learn and research any topic using platforms like YouTube, ChatGPT, Google, and more.</li>
-            </ul>
-        </li>
-        <li><span class="highlight">Install WiFi to Empower Digital Devices</span>
-            <ul>
-                <li>Ensure these digital devices are fully functional and connected to the vast resources available online.</li>
-            </ul>
-        </li>
-        <li><span class="highlight">Implement CCTV Cameras</span>
-            <ul>
-                <li>Monitor these devices to ensure they are used appropriately and that students do not tamper with them, maintaining a secure learning environment.</li>
-            </ul>
-        </li>
-    </ul>
+        <p class="heading">2. So Can We Provide Education Like the Best Schools in the Country?</p>
+        <ul>
+            <li>We can't expect our village school to match the facilities of the best schools in the country, such as those in major cities, given the obvious limitations. Nor can we ask parents in our village to pay city-level fees to achieve this.</li>
+            <li>As individuals who grew up during the digital era, we have witnessed firsthand how technology can bridge the gap between a person in a remote village and someone in the most developed city. Technology has significantly reduced, if not erased, this disparity. All we need to do is embrace it and empower ourselves with it to reduce the gap between our school and the best schools in our country.</li>
+        </ul>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <p class="heading">4. Can’t We Provide Any of These Facilities at This Moment?</p>
-    <ul>
-        <li>Ours is the only school in Karamchedu. The government school has been shut down along with other private schools.</li>
-        <li><span class="highlight">Based on our enquiry, schools in neighboring towns charge a minimum of 2.5 times (up to 7 times) the fees compared to ours.</span></li>
-        <li><span class="highlight">Even the school with 2.5 times the fees still uses physical boards and does not have projectors or smart boards in the classrooms.</span></li>
-        <li>If we were to provide these facilities, we would have to significantly increase the fees, which might not be acceptable or feasible for all the parents in our village.</li>
-    </ul>
+        <p class="heading">3. How Can We Use Technology to Emulate the Best Schools?</p>
+        <p>The main motivation behind this idea is that along with digitization, we can use tools like <span class="highlight">ChatGPT as virtual teachers to support school teachers and help students understand concepts better.</span></p>
+        <ul>
+            <li><span class="highlight">Use Projectors/SmartBoards (Android tablets but on a bigger screen, commonly used by schools in cities) to teach lessons with videos and pictures</span>
+                <ul>
+                    <li>As the saying goes, a picture is worth a thousand words. Imagine watching a movie based on your 10th class non-detail "Hounds of Baskerville." It would be much easier to understand and save a lot of time, allowing students to focus on learning rather than memorizing lessons they don’t fully grasp.</li>
+                    <li>Consider explaining the concept of reflection or the behavior of the moon, sun, and earth in our solar system without showing this <a href="https://www.youtube.com/shorts/b5phg2ml3YM">YouTube video</a>. Visual aids make complex topics clearer and more engaging.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">Use online teaching platforms and resources like Khan Academy, YouTube videos, and educational images, etc., on lesson-related topics.</span>
+                <ul>
+                    <li>Empower teachers and students with the best resources for learning, providing access to high-quality educational content and interactive lessons.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">Use AI tools like ChatGPT</span>
+                <ul>
+                    <li>To quote an example, you can share your screen and ask ChatGPT to solve/explain any problem/topic and have multiple people speak to it in real time.</li>
+                    <li>To explain any topic in the simplest way in Telugu/English.</li>
+                    <li>Solve any problem (be it math, physics, English, and so on).</li>
+                    <li>Improve communication skills by having a group discussion using that tool to correct students' grammar and communication skills.</li>
+                    <li>Sample videos on ChatGPT teacher-like and translation capabilities:
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=c2DFg53Zhvw">Video 1</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=_nSmkyDNulk">Video 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="highlight">Equip school with Multiple Computers and Monitors</span>
+                <ul>
+                    <li>Teach basic computer concepts to students, preparing them for the digital age.</li>
+                    <li>Enable teachers and interested students to learn and research any topic using platforms like YouTube, ChatGPT, Google, and more.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">Install WiFi to Empower Digital Devices</span>
+                <ul>
+                    <li>Ensure these digital devices are fully functional and connected to the vast resources available online.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">Implement CCTV Cameras</span>
+                <ul>
+                    <li>Monitor these devices to ensure they are used appropriately and that students do not tamper with them, maintaining a secure learning environment.</li>
+                </ul>
+            </li>
+        </ul>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <p class="heading">5. Need Your Support to Provide These Facilities</p>
-    <ul>
-        <li>Since it is not feasible for us to provide these facilities due to budget constraints, we encourage you to donate some amount towards these improvements.</li>
-        <li>Your contribution will impact not just one student, but the entire school of 330 students (as of 2023-2024 batch), and it will benefit them for several years to come.</li>
-        <li>We already have had some voluntary donors, including alumni, friends, and well-wishers, who have contributed towards educational fees for poor students and rewards for 10th class toppers in the past:
-            <ul>
-                <li><span class="highlight">Y. Siva Krishna - Donated 15k for 10th toppers for the last few years.</span></li>
-                <li><span class="highlight">Talluri Mallikarjuna - Donated 15k for 10th toppers for the last few years.</span></li>
-                <li><span class="highlight">Several other donors - Covered fees for around 5 students from the 2023-2024 batch.</span></li>
-                <li><span class="highlight">Ravipudi Puran Madhavi - Donated 20k for school infrastructure.</span></li>
-            </ul>
-        </li>
-        <li>Inspired by their generosity, we aim to take it further and provide even better education to the students of our school.</li>
-    </ul>
+        <p class="heading">4. Can’t We Provide Any of These Facilities at This Moment?</p>
+        <ul>
+            <li>Ours is the only school in Karamchedu. The government school has been shut down along with other private schools.</li>
+            <li><span class="highlight">Based on our enquiry, schools in neighboring towns charge a minimum of 2.5 times (up to 7 times) the fees compared to ours.</span></li>
+            <li><span class="highlight">Even the school with 2.5 times the fees still uses physical boards and does not have projectors or smart boards in the classrooms.</span></li>
+            <li>If we were to provide these facilities, we would have to significantly increase the fees, which might not be acceptable or feasible for all the parents in our village.</li>
+        </ul>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <p class="heading">6. Current State of the School</p>
-    <ul>
-        <li>I am happy to inform you that our students performed exceptionally well in the 10th exams. We had a total of 29 10th class students out of an overall 330 students from the 2023-2024 batch:
-            <ul>
-                <li><span class="highlight">Scores above 500 - 18 students (62%).</span></li>
-                <li><span class="highlight">Scores above 450 - 24 students (82%).</span></li>
-                <li><span class="highlight">First class (360 and above) - 29 students (100%).</span></li>
-            </ul>
-        </li>
-        <li><span class="highlight">We have relocated the school from our old location at Chinnavantina Centre to a new building in Hare Rama Ashramam.</span>
-            We had to set up the school infrastructure from scratch as part of this move.
-        </li>
-        <li><span class="highlight">I personally spent around 22 lakhs on this new school infrastructure due to this relocation and to provide more facilities. This is another reason why we are currently running on a very tight budget.</span></li>
-    </ul>
+        <p class="heading">5. Need Your Support to Provide These Facilities</p>
+        <ul>
+            <li>Since it is not feasible for us to provide these facilities due to budget constraints, we encourage you to donate some amount towards these improvements.</li>
+            <li>Your contribution will impact not just one student, but the entire school of 330 students (as of 2023-2024 batch), and it will benefit them for several years to come.</li>
+            <li>We already have had some voluntary donors, including alumni, friends, and well-wishers, who have contributed towards educational fees for poor students and rewards for 10th class toppers in the past:
+                <ul>
+                    <li><span class="highlight">Y. Siva Krishna - Donated 15k for 10th toppers for the last few years.</span></li>
+                    <li><span class="highlight">Talluri Mallikarjuna - Donated 15k for 10th toppers for the last few years.</span></li>
+                    <li><span class="highlight">Several other donors - Covered fees for around 5 students from the 2023-2024 batch.</span></li>
+                    <li><span class="highlight">Ravipudi Puran Madhavi - Donated 20k for school infrastructure.</span></li>
+                </ul>
+            </li>
+            <li>Inspired by their generosity, we aim to take it further and provide even better education to the students of our school.</li>
+        </ul>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <p class="heading">7. Beyond Digitalization: Enriching Extracurricular Activities</p>
-    <p>Our plan is not just about digitalization but also about helping students excel in extracurricular activities with the support of your donations. We aim to conduct the following:</p>
-    <ul>
-        <li>Drawing/Painting, Singing, Dance, Quiz, Debate Competitions.</li>
-        <li>Chess, Rubik's Cube, Mathematics Competitions.</li>
-        <li>Sports Competitions: Organize events for cricket, volleyball, and badminton to encourage physical fitness and teamwork.</li>
-        <li>Attend Nearby Science Exhibitions to generate curiosity.</li>
-        <li>Fancy Dress Competitions (which were conducted on a grand scale in the school in 2023).</li>
-        <li>Library with some of the best-selling books recommended for people under age 15.</li>
-    </ul>
+        <p class="heading">6. Current State of the School</p>
+        <ul>
+            <li>I am happy to inform you that our students performed exceptionally well in the 10th exams. We had a total of 29 10th class students out of an overall 330 students from the 2023-2024 batch:
+                <ul>
+                    <li><span class="highlight">Scores above 500 - 18 students (62%).</span></li>
+                    <li><span class="highlight">Scores above 450 - 24 students (82%).</span></li>
+                    <li><span class="highlight">First class (360 and above) - 29 students (100%).</span></li>
+                </ul>
+            </li>
+            <li><span class="highlight">We have relocated the school from our old location at Chinnavantina Centre to a new building in Hare Rama Ashramam.</span>
+                We had to set up the school infrastructure from scratch as part of this move.
+            </li>
+            <li><span class="highlight">I personally spent around 22 lakhs on this new school infrastructure due to this relocation and to provide more facilities. This is another reason why we are currently running on a very tight budget.</span></li>
+        </ul>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <p class="heading">8. Reconnecting with Alumni: A Request from the Principal</p>
-    <p>As your school principal and former teacher, I have never asked for anything before, but now I have a small request.</p>
-    <ul>
-        <li>My main motto behind this message is to re-establish my connection with the alumni.</li>
-        <li>Nothing gives me more satisfaction than having a conversation with my former students. Please set aside any inhibitions you had during school days and feel free to have a friendly conversation with me whenever you have time.</li>
-        <li>I also encourage you to visit our school and take at least one class during your visit to the village. Share your life experiences, career advice, and study tips so that our students gain motivation, vision for their future, and insights into the paths they should follow and the mistakes they should avoid.</li>
-        <li>Most importantly, many of you may have children or will have children in the future. As you send them to school, if you come across any aspect that could enhance a student’s learning experience, please let me know. I will strive to incorporate the same in our school.</li>
-    </ul>
+        <p class="heading">7. Beyond Digitalization: Enriching Extracurricular Activities</p>
+        <p>Our plan is not just about digitalization but also about helping students excel in extracurricular activities with the support of your donations. We aim to conduct the following:</p>
+        <ul>
+            <li>Drawing/Painting, Singing, Dance, Quiz, Debate Competitions.</li>
+            <li>Chess, Rubik's Cube, Mathematics Competitions.</li>
+            <li>Sports Competitions: Organize events for cricket, volleyball, and badminton to encourage physical fitness and teamwork.</li>
+            <li>Attend Nearby Science Exhibitions to generate curiosity.</li>
+            <li>Fancy Dress Competitions (which were conducted on a grand scale in the school in 2023).</li>
+            <li>Library with some of the best-selling books recommended for people under age 15.</li>
+        </ul>
+
+        <br>
+        <br>
+
+        <p class="heading">8. Reconnecting with Alumni: A Request from the Principal</p>
+        <p>As your school principal and former teacher, I have never asked for anything before, but now I have a small request.</p>
+        <ul>
+            <li>My main motto behind this message is to re-establish my connection with the alumni.</li>
+            <li>Nothing gives me more satisfaction than having a conversation with my former students. Please set aside any inhibitions you had during school days and feel free to have a friendly conversation with me whenever you have time.</li>
+            <li>I also encourage you to visit our school and take at least one class during your visit to the village. Share your life experiences, career advice, and study tips so that our students gain motivation, vision for their future, and insights into the paths they should follow and the mistakes they should avoid.</li>
+            <li>Most importantly, many of you may have children or will have children in the future. As you send them to school, if you come across any aspect that could enhance a student’s learning experience, please let me know. I will strive to incorporate the same in our school.</li>
+        </ul>
+
+        <br>
+        <p>Thanks and Regards,</p>
+        <p>Principal, Sri Vivekananda High School, Karamchedu,</p>
+        <p>Chowdary Jagarlamudi</p>
+    </div>
+
+    <div id="telugu" class="tab-content">
+        <p>ప్రియమైన పూర్వ విద్యార్థులు మరియు మిత్రులారా,</p>
+
+        <p class="heading">1. మన గ్రామం కారంచేడు ను అత్యంత అర్థవంతంగా మార్చగలమా?</p>
+        <p>ఈరోజుల్లో, <span class="highlight italic">అభ్యాసము</span> అనేది ఒక వ్యక్తి కలిగి ఉండగల అత్యంత విలువైన ఆస్తి. ఒక వ్యక్తి, కుటుంబం, సముదాయం, మరియు మన గ్రామం నిజంగా మార్పు చెందగలిగేది ఒకటి ఉన్నట్లయితే, అది విద్యే.</p>
+        <p><span class="highlight">మానా గ్రామం కారంచేడు ని మార్పు చేసి లేపడంలో విద్య అనేది కీలకంగా ఉంటుందని నేను గట్టిగా నమ్ముతున్నాను.</span></p>
+
+        <br>
+        <br>
+
+        <p class="heading">2. దేశంలోని ఉత్తమ పాఠశాలల మాదిరిగా విద్యను అందించగలమా?</p>
+        <ul>
+            <li>మన గ్రామ పాఠశాల దేశంలోని ఉత్తమ పాఠశాలల మాదిరిగా సౌకర్యాలను కలిగి ఉండాలన్నదాన్ని ఆశించలేము, ముఖ్యమైన నగరాల్లో ఉన్నవిధంగా, ప్రత్యేకమైన పరిమితులను అనుసరించి. అలాగే, మన గ్రామంలో ఉన్న తల్లిదండ్రులను నగర స్థాయి ఫీజులు చెల్లించమని అడగలేము.</li>
+            <li>డిజిటల్ యుగంలో పెరిగిన వ్యక్తులుగా, మనం ఒక దూర గ్రామంలో ఉన్న వ్యక్తి మరియు ప్రపంచంలోని అత్యంత అభివృద్ధి చెందిన నగరంలో ఉన్న వ్యక్తి మధ్య ఉన్న అంతరాన్ని సాంకేతికత ఎలా తగ్గించగలదో ప్రత్యక్షంగా చూశాము. సాంకేతికత ఈ వ్యత్యాసాన్ని గణనీయంగా తగ్గించింది లేదా పూర్తిగా తొలగించింది. మన పాఠశాల మరియు దేశంలోని ఉత్తమ పాఠశాలల మధ్య గల అంతరాన్ని తగ్గించడానికి మనం దానిని స్వీకరించి, దాని తోడ్పాటును కలిగి ఉండాలి.</li>
+        </ul>
+
+        <br>
+        <br>
+
+        <p class="heading">3. ఉత్తమ పాఠశాలల మాదిరిగా సాంకేతికతను ఎలా ఉపయోగించవచ్చు?</p>
+        <p>ఈ ఆలోచనకు ప్రధాన ప్రేరణ ఏంటంటే డిజిటలైజేషన్ తో పాటు, <span class="highlight">చాట్ జిపిటి లాంటి AI పరికరాలను వర్చువల్ టీచర్లుగా ఉపయోగించి పాఠశాల టీచర్లు మరియు విద్యార్థులకు సహాయపడే విధంగా ఉండాలి.</span></p>
+        <ul>
+            <li><span class="highlight">ప్రాజెక్టర్లు/స్మార్ట్ బోర్డులు (అందుబాటులో ఉండే ఏండ్రాయిడ్ టాబ్లెట్లు పెద్ద తెరపై, సాధారణంగా నగరాల్లో పాఠశాలలు ఉపయోగించే విధంగా) తో పాటాలు వీడియోలు మరియు చిత్రాలతో నేర్పించాలి</span>
+                <ul>
+                    <li>పదాల వందలతో సమానం ఉన్న చిత్రాన్ని చూస్తున్నట్లు, "హౌండ్స్ ఆఫ్ బాస్కర్‌విల్" లో మీ 10వ తరగతి ఆంగ్ల కథలోని సినిమాను చూడటం అనేది చాలా సులభంగా అర్థం చేసుకోవడం మరియు చాలా సమయం ఆదా చేయడం, విద్యార్థులను అభ్యాసం మీద దృష్టి సారించడానికి అనుమతిస్తుంది.</li>
+                    <li>మన సౌరకుటుంబంలోని చంద్రుడు, సూర్యుడు, మరియు భూమి ప్రవర్తన లేదా ప్రతిబింబన వంటి భావనను చూపకుండా ఈ <a href="https://www.youtube.com/shorts/b5phg2ml3YM">YouTube వీడియో</a>ని చూపకుండానే వివరించడం గురించి ఆలోచించండి. దృశ్య సాయాలు క్లిష్టమైన విషయాలను మరింత స్పష్టంగా మరియు ఆకర్షణీయంగా చేస్తాయి.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">ఖాన్ అకాడమీ, యూట్యూబ్ వీడియోలు మరియు శిక్షణా బొమ్మలు వంటి ఆన్లైన్ పాఠశాలలు మరియు వనరులను ఉపయోగించండి</span>
+                <ul>
+                    <li>పాఠశాల టీచర్లు మరియు విద్యార్థులకు ఉత్తమ వనరులను అందించడానికి సహాయపడండి, అధిక-నాణ్యత ఉన్న విద్యా కంటెంట్ మరియు ఇంటరాక్టివ్ పాఠాలు అందించండి.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">చాట్ జిపిటి వంటి AI పరికరాలను ఉపయోగించండి</span>
+                <ul>
+                    <li>ఉదాహరణగా, మీరు మీ స్క్రీన్ ను పంచుకొని చాట్ జిపిటి ద్వారా ఏ సమస్య/విషయం గురించి అర్థం చేసుకోవడానికి లేదా వివరిస్తారో చెప్పవచ్చు మరియు అనేక మంది అదే సమయంలో మాట్లాడగలరు.</li>
+                    <li>ఏ విషయాన్నైనా తెలుగులో/ఆంగ్లంలో సాధారణంగా అర్థం చేసుకోవడానికి.</li>
+                    <li>ఏ సమస్యను (అది గణితం, భౌతిక శాస్త్రం, ఆంగ్లం మరియు తదితరాలలో) పరిష్కరించడానికి.</li>
+                    <li>గ్రూప్ చర్చ ద్వారా విద్యార్థుల వ్యాకరణ మరియు కమ్యూనికేషన్ నైపుణ్యాలను సరిచేయడానికి ఆ సాధనాన్ని ఉపయోగించడం ద్వారా కమ్యూనికేషన్ నైపుణ్యాలను మెరుగుపరచండి.</li>
+                    <li>చాట్ జిపిటి టీచర్ లా మరియు అనువాద సామర్థ్యాలపై నమూనా వీడియోలు:
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=c2DFg53Zhvw">వీడియో 1</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=_nSmkyDNulk">వీడియో 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="highlight">బహుళ కంప్యూటర్లు మరియు మానిటర్లతో పాఠశాలను కలిపించండి</span>
+                <ul>
+                    <li>విద్యార్థులకు ప్రాథమిక కంప్యూటర్ భావనలను నేర్పించండి, డిజిటల్ యుగానికి సిద్దపడే విధంగా చేయండి.</li>
+                    <li>పాఠశాల టీచర్లు మరియు ఆసక్తిగల విద్యార్థులు ఏ విషయాన్నైనా యూట్యూబ్, చాట్ జిపిటి, గూగుల్, మరియు మరెన్నో వేదికలను ఉపయోగించి అర్థం చేసుకోవడానికి మరియు శోధించడానికి అనుమతించండి.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">డిజిటల్ పరికరాలకు WiFi ని కలిపించండి</span>
+                <ul>
+                    <li>ఈ డిజిటల్ పరికరాలు పూర్తిగా సక్రియంగా ఉండే విధంగా మరియు ఆన్‌లైన్‌లో అందుబాటులో ఉన్న విస్తృత వనరులతో అనుసంధానించండి.</li>
+                </ul>
+            </li>
+            <li><span class="highlight">CCTV కెమెరాలు అమర్చండి</span>
+                <ul>
+                    <li>ఈ పరికరాలు సక్రియంగా మరియు విద్యార్థులు వాటిని స్పర్శించకుండా ఉండేటట్లు మానిటర్ చేయండి, సురక్షిత అభ్యాస పర్యావరణం అందించండి.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+        <br>
+
+        <p class="heading">4. మనం ఈ సమయంలో ఈ సౌకర్యాలను అందించలేమా?</p>
+        <ul>
+            <li>కారంచేడు లో మన పాఠశాల మాత్రమే ఉంది. ప్రభుత్వ పాఠశాల మూసివేయబడింది మరియు ఇతర ప్రైవేట్ పాఠశాలలు కూడా.</li>
+            <li><span class="highlight">మన పరిశీలన ఆధారంగా, సమీప పట్టణాల్లో ఉన్న పాఠశాలలు 2.5 రెట్లు (7 రెట్లు వరకు) మన ఫీజుల కంటే ఎక్కువ ఫీజులు వసూలు చేస్తున్నాయి.</span></li>
+            <li><span class="highlight">అధిక ఫీజులు వసూలు చేసే పాఠశాల కూడా శారీరక బోర్డులను ఉపయోగిస్తాయి మరియు తరగతుల్లో ప్రాజెక్టర్లు లేదా స్మార్ట్ బోర్డులు లేవు.</span></li>
+            <li>ఈ సౌకర్యాలను అందించడానికి మనం ఫీజులను గణనీయంగా పెంచాలి, ఇది మన గ్రామంలో ఉన్న అన్ని తల్లిదండ్రులకు ఆమోదయోగ్యం లేదా సాధ్యమైనది కాదు.</li>
+        </ul>
+
+        <br>
+        <br>
+
+        <p class="heading">5. ఈ సౌకర్యాలను అందించడానికి మీ సహాయం అవసరం</p>
+        <ul>
+            <li>బడ్జెట్ పరిమితుల కారణంగా ఈ సౌకర్యాలను అందించడం మనకు సాధ్యం కాకపోవడంతో, మీరు ఈ మెరుగుదలకు దానిని అందించడానికి ప్రోత్సహించండి.</li>
+            <li>మీ విరాళం ఒక విద్యార్థికి మాత్రమే కాకుండా, 330 మంది విద్యార్థులు (2023-2024 బ్యాచ్ నుండి) మొత్తం పాఠశాల మరియు వారి కాలానికి ఉపయోగపడుతుంది.</li>
+            <li>మనం ఇప్పటికే కొన్ని స్వచ్ఛంద దాతలు, పూర్వ విద్యార్థులు, మిత్రులు మరియు మిత్రులు ఉన్నాము, వారు పేద విద్యార్థుల విద్యా ఫీజులకు మరియు గత సంవత్సరాలలో 10వ తరగతి విద్యార్థుల బహుమతులకు విరాళం అందించారు:
+                <ul>
+                    <li><span class="highlight">Y. సివా కృష్ణ - గత కొన్ని సంవత్సరాలుగా 10వ తరగతి విద్యార్థులకు 15k విరాళం ఇచ్చారు.</span></li>
+                    <li><span class="highlight">తల్లూరి మల్లికార్జున - గత కొన్ని సంవత్సరాలుగా 10వ తరగతి విద్యార్థులకు 15k విరాళం ఇచ్చారు.</span></li>
+                    <li><span class="highlight">కొన్ని ఇతర దాతలు - 2023-2024 బ్యాచ్ నుండి సుమారు 5 మంది విద్యార్థుల ఫీజులను కవర్ చేశారు.</span></li>
+                    <li><span class="highlight">రవిపూడి పురణ మాధవి - పాఠశాల మౌలిక సదుపాయాలకు 20k విరాళం ఇచ్చారు.</span></li>
+                </ul>
+            </li>
+            <li>వారి దాతృత్వం ప్రేరణగా, మనం ఇంకా మెరుగైన విద్యను పాఠశాల విద్యార్థులకు అందించాలనుకుంటున్నాము.</li>
+        </ul>
+
+        <br>
+        <br>
+
+        <p class="heading">6. పాఠశాల ప్రస్తుత స్థితి</p>
+        <ul>
+            <li>మా విద్యార్థులు 10వ తరగతి పరీక్షల్లో అత్యుత్తమంగా ప్రదర్శించారని మీకు తెలియజేయడానికి సంతోషిస్తున్నాను. 2023-2024 బ్యాచ్ నుండి మొత్తం 330 మంది విద్యార్థులలో 29 మంది 10వ తరగతి విద్యార్థులు ఉన్నారు:
+                <ul>
+                    <li><span class="highlight">500 కన్నా ఎక్కువ స్కోర్లు - 18 మంది విద్యార్థులు (62%).</span></li>
+                    <li><span class="highlight">450 కన్నా ఎక్కువ స్కోర్లు - 24 మంది విద్యార్థులు (82%).</span></li>
+                    <li><span class="highlight">ఫస్ట్ క్లాస్ (360 మరియు ఎక్కువ) - 29 మంది విద్యార్థులు (100%).</span></li>
+                </ul>
+            </li>
+            <li><span class="highlight">మన పాత స్థల చినవంటినా సెంటర్ నుండి హరే రామ ఆశ్రమం లో కొత్త భవనానికి పాఠశాలను తరలించాము.</span>
+                ఈ తరలింపు భాగంగా పాఠశాల మౌలిక సదుపాయాలను ప్రారంభించాల్సి వచ్చింది.
+            </li>
+            <li><span class="highlight">ఈ స్థల మార్పు కారణంగా మరియు మరిన్ని సదుపాయాలను అందించడానికి కొత్త పాఠశాల మౌలిక సదుపాయాలకు నేను సుమారు 22 లక్షలు ఖర్చు పెట్టాను. ఇది మనం ప్రస్తుతం బడ్జెట్ లో ఉండటానికి మరో కారణం.</span></li>
+        </ul>
+
+        <br>
+        <br>
+
+        <p class="heading">7. డిజిటలైజేషన్ కి మించి: అసంపూర్ణ కార్యకలాపాలు సమృద్ధి చెందడం</p>
+        <p>మా ప్రణాళిక కేవలం డిజిటలైజేషన్ గురించే కాకుండా, మీ విరాళంతో సహా విద్యార్థులు అసంపూర్ణ కార్యకలాపాలలో కూడా మెరుగుపడే విధంగా ఉండాలి. మనం క్రింది వాటిని నిర్వహించాలనుకుంటున్నాము:</p>
+        <ul>
+            <li>డ్రాయింగ్/పెయింటింగ్, సింగింగ్, డాన్స్, క్విజ్, డిబేట్ పోటీలను నిర్వహించండి.</li>
+            <li>చెస్, రుబిక్ క్యూబ్, గణితం పోటీలను నిర్వహించండి.</li>
+            <li>క్రీడా పోటీలు: క్రికెట్, వాలీబాల్, మరియు బ్యాడ్మింటన్ వంటి కార్యక్రమాలను నిర్వహించడం ద్వారా విద్యార్థుల శారీరక శక్తి మరియు టీమ్ వర్క్ ను ప్రోత్సహించండి.</li>
+            <li>తదుపరి సైన్స్ ప్రదర్శనలను సందర్శించడం ద్వారా ఆకర్షణను సృష్టించండి.</li>
+            <li>ఫ్యాన్సీ డ్రెస్ పోటీలను (2023 లో పాఠశాలలో విస్తృత స్థాయిలో నిర్వహించబడ్డాయి) నిర్వహించండి.</li>
+            <li>15 సంవత్సరాల వయస్సు కింద ఉన్న వారికి సిఫారసు చేయబడిన కొన్ని ఉత్తమ అమ్మకం పుస్తకాలతో లైబ్రరీని కలపండి.</li>
+        </ul>
+
+        <br>
+        <br>
+
+        <p class="heading">8. పూర్వ విద్యార్థులతో తిరిగి సంబంధం కలిగి ఉండడం: ప్రిన్సిపాల్ నుండి ఒక అభ్యర్థన</p>
+        <p>మీ పాఠశాల ప్రిన్సిపాల్ మరియు పూర్వ టీచర్ గా, నేను ఇంతకు ముందు ఏదీ అడగలేదు, కానీ ఇప్పుడు నాకు ఒక చిన్న అభ్యర్థన ఉంది.</p>
+        <ul>
+            <li>ఈ సందేశం వెనుక ఉన్న నా ప్రధాన లక్ష్యం పూర్వ విద్యార్థులతో నా సంబంధాన్ని పునఃప్రతిష్టించడం.</li>
+            <li>నా పూర్వ విద్యార్థులతో సంభాషించడం కంటే నాకు ఎక్కువ సంతోషం ఉండదు. మీరు పాఠశాలలో ఉన్నప్పుడు కలిగి ఉన్న అన్ని నిరీక్షణలను పక్కన పెట్టండి మరియు నాకు సమయం ఉన్నప్పుడు నాకు ఒక స్నేహపూర్వక సంభాషణను నిర్వహించడానికి సంతోషించండి.</li>
+            <li>మన గ్రామానికి పర్యటన చేసే సమయంలో మా పాఠశాలకు మీరు కనీసం ఒక తరగతి తీసుకోండి అని కూడా ప్రోత్సహిస్తున్నాను. మీ జీవితం అనుభవాలను, ఉద్యోగ సలహాలను, మరియు అభ్యాసం సూచనలను పంచుకోండి, తద్వారా మన విద్యార్థులు వారి భవిష్యత్తు గురించి ప్రేరణ పొందడం, వారి పయనాన్ని అర్థం చేసుకోవడం, మరియు తప్పులను నివారించేందుకు మార్గాలను అర్థం చేసుకోవడం కోసం సలహాలు పొందగలరు.</li>
+            <li>అత్యంత ముఖ్యంగా, మీలో అనేక మంది ఇప్పుడు పిల్లలను కలిగి ఉండవచ్చు లేదా భవిష్యత్తులో పిల్లలను కలిగి ఉండవచ్చు. మీరు వారిని పాఠశాలకు పంపుతున్నప్పుడు, ఒక విద్యార్థి అభ్యాస అనుభవాన్ని మెరుగుపరచడానికి ఏ అంశం అయినా మీరు గుర్తించండి, దయచేసి నాకు తెలియజేయండి. నేను మా పాఠశాలలో అదే అమలు చేయడానికి ప్రయత్నిస్తాను.</li>
+        </ul>
+
+        <br>
+        <p>ధన్యవాదములు మరియు శుభాకాంక్షలు,</p>
+        <p>ప్రిన్సిపాల్, శ్రీ వివేకానంద హై స్కూల్, కారంచేడు,</p>
+        <p>చౌదరి జాగర్లమూడి</p>
+    </div>
+
+    <script>
+        function showTab(language) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(language).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
